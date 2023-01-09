@@ -1,0 +1,68 @@
+.modal-made {
+  padding: 40px 25px 40px;
+}
+
+.modal-made__title {
+  margin-bottom: 16px;
+
+  font-family: var(--font-family-secondary);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 0.8789;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-accent);
+}
+
+.modal-made__list {
+  min-width: 250px;
+  width: 100%;
+}
+
+.modal-made__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.modal-made__subtitle {
+  margin-bottom: 15px;
+
+  font-family: var(--font-family-secondary);
+  font-weight: 400;
+  font-size: 18;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-menu-bg);
+}
+
+@include mq(mob-only) {
+  .modal-made__text {
+    display: inline;
+  }
+
+  .modal-made__btn {
+    padding: 0;
+    background-color: transparent;
+    color: var(--color-menu-bg);
+  }
+
+  #more {
+    display: none;
+  }
+
+  #moreFirst {
+    display: none;
+  }
+
+  #moreSecond {
+    display: none;
+  }
+}
+
+@include mq(tab) {
+  .modal-made__btn,
+  .modal-made__dots {
+    display: none;
+  }
+}

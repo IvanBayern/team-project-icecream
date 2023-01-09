@@ -1,0 +1,22 @@
+.menu {
+	position: relative;
+	z-index: 10;
+	&__list {
+		display: flex;
+		column-gap: 35px;
+	}
+
+	&__link {
+		display: block;
+		padding: 14px 0;
+		color: var(--color-light);
+		font-weight: 700;
+		line-height: 1.31;
+		transition: color var(--anim);
+
+		&:hover,
+		&:focus {
+			color: var(--color-accent);
+		}
+	}
+}

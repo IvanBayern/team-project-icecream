@@ -1,0 +1,84 @@
+.header {
+	background-color: var(--color-accent-bg);
+	overflow: hidden;
+	&__container {
+		@include mq(tab-only) {
+			padding: 0 32px;
+		}
+	}
+
+	&__top {
+		display: flex;
+		align-items: center;
+		padding: 10px 0;
+
+		@include mq(tab) {
+			padding: 30px 0 0;
+		}
+
+		@include mq(desk) {
+			justify-content: space-between;
+			padding: 35px 0 20px;
+		}
+	}
+
+	&__logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: auto;
+
+		@include mq(desk) {
+			margin-right: 0;
+		}
+	}
+
+	&__mobile-menu {
+		@include mq(desk) {
+			display: none;
+		}
+	}
+
+	&__desktop-menu {
+		display: none;
+
+		@include mq(desk) {
+			display: block;
+		}
+	}
+
+	&__icon-menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--color-accent-bg);
+		transition: all 0.4s ease;
+
+		@include mq(tab) {
+			margin-right: 30px;
+		}
+
+		@include mq(desk) {
+			display: none;
+		}
+	}
+
+	&__menu-icon {
+		fill: var(--color-accent);
+	}
+
+	&__btn {
+		display: none;
+
+		@include mq(tab) {
+			display: flex;
+			transition: all 0.4s ease;
+		}
+	}
+
+	&__hero {
+		@include mq(tab) {
+			display: flex;
+		}
+	}
+}
